@@ -5,35 +5,34 @@
     src: url('fonts/GothamBold.svg#GothamBold') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-
-  @font-face {
+@font-face {
     font-family: 'GothamBook';
     src: url('fonts/GothamBook.eot') format('embedded-opentype');
     src: url('fonts/GothamBook.ttf') format('truetype');
     src: url('fonts/GothamBook.svg#GothamBook') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'GothamMedium';
     src: url('fonts/GothamMedium.eot') format('embedded-opentype');
     src: url('fonts/GothamMedium.ttf') format('truetype');
     src: url('fonts/GothamMedium.svg#GothamMedium') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'SourceSansPro-Regular';
     src: url('fonts/SourceSansPro-Regular.eot') format('embedded-opentype');
     src: url('fonts/SourceSansPro-Regular.ttf') format('truetype');
     src: url('fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 // Custom.scss
 // Option A: Include all of Bootstrap
@@ -54,8 +53,12 @@ body {
 }
 
 .panel-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-left: auto;
     a {
         font-size: 0.8rem;
@@ -84,8 +87,12 @@ body {
 }
 
 .panel-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin-left: auto;
     p {
         font-size: 1rem;
@@ -117,9 +124,13 @@ header {
     width: 100%;
 }
 
+h3 {
+    font-family: 'GothamBold';
+}
+
 h4,
 h6 {
-    color: $primary; 
+    color: $primary;
 }
 
 h6 {
@@ -137,6 +148,10 @@ form {
     }
 }
 
+button {
+    font-family: 'GothamBook';
+}
+
 .login-a {
     width: auto;
     height: -webkit-fill-available;
@@ -148,7 +163,8 @@ form {
 
 .login-b {
     text-align: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     padding: 0 10%;
 }
 
@@ -156,6 +172,8 @@ form {
 #errorContra {
     height: 2rem;
     color: $red;
+    font-family: 'GothamBook';
+    font-size: 0.8rem;
 }
 
 .datos {
@@ -219,7 +237,10 @@ form {
     color: #7e7e7e;
     background-color: #ffffff;
     background-clip: padding-box;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
     border-left: 0px;
     border-top: 0px;
     border-right: 0px;
@@ -229,6 +250,8 @@ form {
 
 .tipo-reporte {
     margin-bottom: 1.5rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     * {
         padding-right: 1rem;
@@ -273,7 +296,8 @@ form {
     left: -1px;
     top: -14px;
     content: "•";
-    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
     color: $primary;
 }
 
@@ -296,9 +320,16 @@ label {
 
 .card-85 {
     height: 85% !important;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 // Example: Style from medium breakpoint and down
@@ -311,7 +342,9 @@ label {
     }
     .panel-2 {
         margin-top: 1rem;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .tipo-reporte {
         display: block;

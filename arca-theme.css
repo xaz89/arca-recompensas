@@ -9703,7 +9703,11 @@ body {
 }
 
 .panel-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   margin-left: auto;
 }
@@ -9733,7 +9737,11 @@ body {
 }
 
 .panel-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   margin-left: auto;
 }
@@ -9765,6 +9773,10 @@ header {
   width: 100%;
 }
 
+h3 {
+  font-family: "GothamBold";
+}
+
 h4,
 h6 {
   color: #F40000;
@@ -9783,6 +9795,10 @@ form button {
   margin-top: 0rem;
 }
 
+button {
+  font-family: "GothamBook";
+}
+
 .login-a {
   width: auto;
   height: -webkit-fill-available;
@@ -9794,6 +9810,7 @@ form button {
 
 .login-b {
   text-align: center;
+  -ms-flex-item-align: center;
   align-self: center;
   padding: 0 10%;
 }
@@ -9802,6 +9819,8 @@ form button {
 #errorContra {
   height: 2rem;
   color: #F40000;
+  font-family: "GothamBook";
+  font-size: 0.8rem;
 }
 
 .datos {
@@ -9865,7 +9884,10 @@ form button {
   color: #7e7e7e;
   background-color: #ffffff;
   background-clip: padding-box;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   border-left: 0px;
   border-top: 0px;
   border-right: 0px;
@@ -9875,6 +9897,8 @@ form button {
 
 .tipo-reporte {
   margin-bottom: 1.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 .tipo-reporte * {
@@ -9918,6 +9942,7 @@ form button {
   left: -1px;
   top: -14px;
   content: "•";
+  -webkit-transform: rotate(40deg);
   transform: rotate(40deg);
   color: #F40000;
 }
@@ -9941,8 +9966,15 @@ label {
 
 .card-85 {
   height: 85% !important;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -9957,6 +9989,8 @@ label {
 
   .panel-2 {
     margin-top: 1rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
