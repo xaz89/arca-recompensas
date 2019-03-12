@@ -9900,6 +9900,13 @@ label {
   cursor: pointer;
 }
 
+.card-85 {
+  height: 85% !important;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 991.98px) {
   .logo {
     height: 2rem;

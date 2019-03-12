@@ -192,7 +192,6 @@ form {
     }
     h5 {
         color: $primary;
-
     }
     label {
         font-size: 0.85rem;
@@ -251,32 +250,33 @@ label {
     cursor: pointer;
 }
 
+.card-85 {
+    height: 85% !important;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
 
 // Example: Style from medium breakpoint and down
 @include media-breakpoint-down(md) {
     .logo {
-      height: 2rem;
+        height: 2rem;
     }
-
     .panel-g {
-    text-align: center;
+        text-align: center;
     }
-
     .panel-2 {
         margin-top: 1rem;
         justify-content: center;
     }
-
     .tipo-reporte {
         display: block;
         text-align: center;
-
         label {
             margin-top: 0.5rem;
         }
-
         * {
             padding-right: 0
         }
     }
-  }
+}
