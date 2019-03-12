@@ -9840,7 +9840,6 @@ form button {
 }
 .tipo-reporte * {
   padding-right: 1rem;
-  align-items: center;
   vertical-align: middle;
 }
 .tipo-reporte h5 {
@@ -9849,7 +9848,7 @@ form button {
 .tipo-reporte label {
   font-size: 0.85rem;
   display: inline-block;
-  margin-top: 1.5rem;
+  margin-top: 0.4rem;
 }
 
 .table {
@@ -9920,7 +9919,7 @@ label {
     text-align: center;
   }
   .tipo-reporte label {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
   .tipo-reporte * {
     padding-right: 0;
