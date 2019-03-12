@@ -9803,7 +9803,7 @@ form button {
 }
 
 .caja::after {
-  content: url(../img/select.svg);
+  content: url(img/select.svg);
   display: table-cell;
   padding-top: 0.2rem;
   text-align: center;
