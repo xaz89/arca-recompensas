@@ -9,14 +9,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="arca-theme.css">
-<link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="row">
-                <div class="col"><img src="img/logo-recompensas.png" alt="" class="logo"></div>
+                <div class="col"><a href="index.html"><img src="img/logo-recompensas.png" alt="" class="logo"></a></div>
                 <div class="col ml-auto text-right"><img src="img/logo-arca.png" alt="" class="logo"></div>
             </div>
         </div>
@@ -39,314 +39,277 @@
                 </div>
             </div>
         </div>
-
     </div>
     <div class="datos">
         <div class="container">
-            
-                <div class="card-deck">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Alta de Población</h5>
-                            <p class="card-text"></p>
-                            <div class="card-85">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Alta de Población</h5>
+                        <p class="card-text"></p>
+                        <div class="card-85">
                             <div class="form-row align-items-center">
+                                <div class="col-6">
+                                    Región
+                                </div>
+                                <div class="col-6">
+                                    <div class="caja">
+                                        <select name="" id="" class="form-control2">
+                                            <option value="">Todas</option>
+                                            <option value="">sdf</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    Embotelladora
+                                </div>
+                                <div class="col-6">
+                                    <div class="caja">
+                                        <select name="" id="" class="form-control2">
+                                            <option value="">Todas</option>
+                                            <option value="">sdf</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    Distribuidora
+                                </div>
+                                <div class="col-6">
+                                    <div class="caja">
+                                        <select name="" id="" class="form-control2">
+                                            <option value="">Todas</option>
+                                            <option value="">sdf</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    Nivel Cliente
+                                </div>
+                                <div class="col-6">
+                                    <div class="caja">
+                                        <select name="" id="" class="form-control2">
+                                            <option value="">Todas</option>
+                                            <option value="">sdf</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary" id="consultar">CONSULTAR CLIENTES</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Selección de Indicadores</h5>
+                        <div class="form-row align-items-center" style="justify-content: space-around;">
+                            <div class="col-6">
+                                Respeto a enfriador
+                            </div>
+                            <div class="col-6">
+                                <div class="caja">
+                                    <select name="" id="" class="form-control2">
+                                        <option value="">No aplica</option>
+                                        <option value="">sdf</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                Primera posición fria
+                            </div>
+                            <div class="col-6">
+                                <div class="caja">
+                                    <select name="" id="" class="form-control2">
+                                        <option value="">No aplica</option>
+                                        <option value="">sdf</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                Llenado al 75%
+                            </div>
+                            <div class="col-6">
+                                <div class="caja">
+                                    <select name="" id="" class="form-control2">
+                                        <option value="">No aplica</option>
+                                        <option value="">sdf</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                Acomodo de producto
+                            </div>
+                            <div class="col-6">
+                                <div class="caja">
+                                    <select name="" id="" class="form-control2">
+                                        <option value="">No aplica</option>
+                                        <option value="">sdf</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                Comidas
+                            </div>
+                            <div class="col-6">
+                                <div class="caja">
+                                    <select name="" id="" class="form-control2">
+                                        <option value="">No aplica</option>
+                                        <option value="">sdf</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                Objetivo
+                            </div>
+                            <div class="col-6">
+                                <div class="caja">
+                                    <select name="" id="" class="form-control2">
+                                        <option value="">No aplica</option>
+                                        <option value="">sdf</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary" id="descargar">DESCARGAR EN EXCEL</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Meses bases de la promoción</h5>
+                        <p class="card-text">2019-01 Ene</p>
+                        <p class="card-text">2018-12 Dic</p>
+                        <p class="mt-auto"><b>NOTA </b> <br>
+                            * Para seleccionar un mes de click sobre el
+                            mes deseado. <br>
+                            * Si desea seleccionar dos meses de click
+                            sobre el primer mes y posteriormete oprima
+                            la tecla ctrl y de click sobre el segundo mes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary" id="limpiar">LIMPIAR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="table-responsive bg-white">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Región</th>
+                                    <th>Territorio</th>
+                                    <th>Distribuidora</th>
+                                    <th>Cliente</th>
+                                    <th>Razón Social</th>
+                                    <th>Nivel Cliente</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>NORTE</td>
+                                    <td>DELICIAS</td>
+                                    <td>DELICIAS</td>
+                                    <td>500371816</td>
+                                    <td>ABARROTES DOS HERMANOS</td>
+                                    <td>ORO</td>
+                                </tr>
+                                <tr>
+                                    <td>NORTE</td>
+                                    <td>DELICIAS</td>
+                                    <td>DELICIAS</td>
+                                    <td>500371816</td>
+                                    <td>ABARROTES DOS HERMANOS</td>
+                                    <td>ORO</td>
+                                </tr>
+                                <tr>
+                                    <td>NORTE</td>
+                                    <td>DELICIAS</td>
+                                    <td>DELICIAS</td>
+                                    <td>500371816</td>
+                                    <td>ABARROTES DOS HERMANOS</td>
+                                    <td>ORO</td>
+                                </tr>
+                                <tr>
+                                    <td>NORTE</td>
+                                    <td>DELICIAS</td>
+                                    <td>DELICIAS</td>
+                                    <td>500371816</td>
+                                    <td>ABARROTES DOS HERMANOS</td>
+                                    <td>ORO</td>
+                                </tr>
+                                <tr>
+                                    <td>NORTE</td>
+                                    <td>DELICIAS</td>
+                                    <td>DELICIAS</td>
+                                    <td>500371816</td>
+                                    <td>ABARROTES DOS HERMANOS</td>
+                                    <td>ORO</td>
+                                </tr>
+                                <tr>
+                                    <td>NORTE</td>
+                                    <td>DELICIAS</td>
+                                    <td>DELICIAS</td>
+                                    <td>500371816</td>
+                                    <td>ABARROTES DOS HERMANOS</td>
+                                    <td>ORO</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Tipo de beneficio</h5>
+                            <div class="card-85">
+                                <textarea name="" id="" cols="10" rows="5" class="form-control"></textarea>
+                                <p class="card-text"></p>
+                                <div class="form-row align-items-center">
                                     <div class="col-6">
-                                            Región
+                                        Vigencia inicial
                                     </div>
                                     <div class="col-6">
                                         <div class="caja">
                                             <select name="" id="" class="form-control2">
-                                                <option value="">Todas</option>
+                                                <option value="">Selecciona</option>
                                                 <option value="">sdf</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                            Embotelladora
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="caja">
-                                                <select name="" id="" class="form-control2">
-                                                    <option value="">Todas</option>
-                                                    <option value="">sdf</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-6">
-                                                Distribuidora
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="caja">
-                                                    <select name="" id="" class="form-control2">
-                                                        <option value="">Todas</option>
-                                                        <option value="">sdf</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                    Nivel Cliente
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="caja">
-                                                        <select name="" id="" class="form-control2">
-                                                            <option value="">Todas</option>
-                                                            <option value="">sdf</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                        
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-primary" id="consultar">CONSULTAR CLIENTES</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Selección de Indicadores</h5>
-
-                            <div class="form-row align-items-center" style="justify-content: space-around;">
-                                <div class="col-6">
-                                        Respeto a enfriador
-                                </div>
-                                <div class="col-6">
-                                    <div class="caja">
-                                        <select name="" id="" class="form-control2">
-                                            <option value="">No aplica</option>
-                                            <option value="">sdf</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-6">
-                                        Primera posición fria
-                                </div>
-                                <div class="col-6">
-                                    <div class="caja">
-                                        <select name="" id="" class="form-control2">
-                                            <option value="">No aplica</option>
-                                            <option value="">sdf</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-6">
-                                        Llenado al 75%
+                                        Vigencia final
                                     </div>
                                     <div class="col-6">
                                         <div class="caja">
                                             <select name="" id="" class="form-control2">
-                                                <option value="">No aplica</option>
+                                                <option value="">Selecciona</option>
                                                 <option value="">sdf</option>
                                             </select>
                                         </div>
                                     </div>
-
                                     <div class="col-6">
-                                            Acomodo de producto
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="caja">
-                                                <select name="" id="" class="form-control2">
-                                                    <option value="">No aplica</option>
-                                                    <option value="">sdf</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-6">
-                                                Comidas
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="caja">
-                                                    <select name="" id="" class="form-control2">
-                                                        <option value="">No aplica</option>
-                                                        <option value="">sdf</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                    Objetivo
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="caja">
-                                                        <select name="" id="" class="form-control2">
-                                                            <option value="">No aplica</option>
-                                                            <option value="">sdf</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                            
-
-
-
-                            </div>
-
-
-
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-secondary" id="descargar">DESCARGAR EN EXCEL</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-                        <div class="card-body">
-                            <h5 class="card-title">Meses bases de la promoción</h5>
-                            <p class="card-text">2019-01 Ene</p>
-                            <p class="card-text">2018-12 Dic</p>
-
-                            <p class="mt-auto"><b>NOTA </b> <br>
-                                    * Para seleccionar un mes de click sobre el
-                                       mes deseado. <br>
-                                    * Si desea seleccionar dos meses de click
-                                       sobre el primer mes y posteriormete oprima
-                                       la tecla ctrl y de click sobre el segundo mes.</p>
-                            
-                            
-                        </div>
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-secondary" id="limpiar">LIMPIAR</button>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="row ">
-                    <div class="col-md-8">
-                        <div class="table-responsive bg-white">
-                                <table class="table">
-                                        <thead class="thead-dark">
-                                          <tr>
-                                            <th>Región</th>
-                                            <th>Territorio</th>
-                                            <th>Distribuidora</th>
-                                            <th>Cliente</th>
-                                            <th>Razón Social</th>
-                                            <th>Nivel Cliente</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <td>NORTE</td>
-                                            <td>DELICIAS</td>
-                                            <td>DELICIAS</td>
-                                            <td>500371816</td>
-                                            <td>ABARROTES DOS HERMANOS</td>
-                                            <td>ORO</td>
-                                          </tr>
-                                          <tr>
-                                                <td>NORTE</td>
-                                                <td>DELICIAS</td>
-                                                <td>DELICIAS</td>
-                                                <td>500371816</td>
-                                                <td>ABARROTES DOS HERMANOS</td>
-                                                <td>ORO</td>
-                                              </tr>
-                                              <tr>
-                                                    <td>NORTE</td>
-                                                    <td>DELICIAS</td>
-                                                    <td>DELICIAS</td>
-                                                    <td>500371816</td>
-                                                    <td>ABARROTES DOS HERMANOS</td>
-                                                    <td>ORO</td>
-                                                  </tr>
-                                                  <tr>
-                                                        <td>NORTE</td>
-                                                        <td>DELICIAS</td>
-                                                        <td>DELICIAS</td>
-                                                        <td>500371816</td>
-                                                        <td>ABARROTES DOS HERMANOS</td>
-                                                        <td>ORO</td>
-                                                      </tr>
-                                                      <tr>
-                                                            <td>NORTE</td>
-                                                            <td>DELICIAS</td>
-                                                            <td>DELICIAS</td>
-                                                            <td>500371816</td>
-                                                            <td>ABARROTES DOS HERMANOS</td>
-                                                            <td>ORO</td>
-                                                          </tr>
-                                                          <tr>
-                                                                <td>NORTE</td>
-                                                                <td>DELICIAS</td>
-                                                                <td>DELICIAS</td>
-                                                                <td>500371816</td>
-                                                                <td>ABARROTES DOS HERMANOS</td>
-                                                                <td>ORO</td>
-                                                              </tr>
-
-                                          
-                                        </tbody>
-                                      </table>
-                                      
-                                     
-                        </div>
-                    </div>
-                    <div class="col card-deck">
-                            <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Tipo de beneficio</h5>
-                                        <div class="card-85">
-                                        <textarea name="" id="" cols="10" rows="5" class="form-control">
-                                           
-                                        </textarea>
-                                        <p class="card-text"></p>
-                                        
-                                        <div class="form-row align-items-center">
-                                                <div class="col-6">
-                                                        Vigencia inicial
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="caja">
-                                                        <select name="" id="" class="form-control2">
-                                                            <option value="">Selecciona</option>
-                                                            <option value="">sdf</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                        Vigencia final
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="caja">
-                                                            <select name="" id="" class="form-control2">
-                                                                <option value="">Selecciona</option>
-                                                                <option value="">sdf</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-            
-                                                    <div class="col-6">
-                                                            Tipo de puntos
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <div class="caja">
-                                                                <select name="" id="" class="form-control2">
-                                                                    <option value="">Selecciona</option>
-                                                                    <option value="">sdf</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-            
-                                                        
-                                                    
-                                            </div>
-                                        </div>
+                                        Tipo de puntos
                                     </div>
-                                    <div class="card-footer">
-                                        <button type="button" class="btn btn-secondary" id="consultar">GUARDAR PROMOCIÓN</button>
+                                    <div class="col-6">
+                                        <div class="caja">
+                                            <select name="" id="" class="form-control2">
+                                                <option value="">Selecciona</option>
+                                                <option value="">sdf</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-secondary" id="consultar">GUARDAR PROMOCIÓN</button>
+                        </div>
                     </div>
                 </div>
-
-            
+            </div>
         </div>
     </div>
     <!-- Optional JavaScript -->
@@ -354,8 +317,6 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper-1.14.3.min.js"></script>
     <script src="js/bootstrap-1.14.3.min.js"></script>
-
-
 </body>
 
 </html>
