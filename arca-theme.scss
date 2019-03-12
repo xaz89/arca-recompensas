@@ -1,0 +1,283 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #EFEFEF;
+}
+
+.panel-g {
+    padding-top: 1rem;
+    background-color: $white;
+}
+
+.panel-1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    a {
+        font-size: 0.8rem;
+        text-align: right;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        border-right: 1px;
+        border-right-color: $gray-300;
+        border-right-style: solid;
+        border-right-width: 1px;
+        text-transform: uppercase;
+        color: $dark;
+        &.active {
+            color: $primary;
+        }
+        &:first-of-type {
+            padding-left: 0;
+        }
+        &:last-of-type {
+            border: none;
+        }
+        span {
+            font-weight: bolder;
+        }
+    }
+}
+
+.panel-2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    p {
+        font-size: 1rem;
+        text-align: right;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        border-right: 1px;
+        border-right-color: $gray-300;
+        border-right-style: solid;
+        border-right-width: 1px;
+        &:last-of-type {
+            border: none;
+            padding-right: 0;
+        }
+        span {
+            font-weight: bolder;
+        }
+    }
+}
+
+header {
+    background-color: $dark;
+    color: $white;
+    ;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; // position: absolute;
+    z-index: 1;
+    display: block;
+    width: 100%;
+}
+
+h4,
+h6 {
+    color: $primary;
+}
+
+form {
+    label {
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+    }
+    button {
+        margin-top: 0rem;
+    }
+}
+
+.login-a {
+    width: auto;
+    height: -webkit-fill-available;
+    background-image: url(img/fondoLogin.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: right;
+}
+
+.login-b {
+    text-align: center;
+    align-self: center;
+    padding: 0 10%;
+}
+
+#errorUsuario,
+#errorContra {
+    height: 2rem;
+    color: $red;
+}
+
+.datos {
+    padding-top: 2rem;
+}
+
+.btn {
+    font-size: 0.8rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    width: 100%;
+    &.btn-secondary {
+        color: $white;
+    }
+}
+
+.card {
+    font-size: 0.85rem;
+}
+
+.card-title {
+    color: $primary;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.caja {
+    border: 1px solid #d9d9d9;
+    overflow: hidden;
+    position: relative;
+    height: calc(2.25rem + 2px);
+    width: 100%;
+    background: white;
+    border-radius: 0.4rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.caja::after {
+    content: url(../img/select.svg);
+    display: table-cell;
+    padding-top: 0.2rem;
+    text-align: center;
+    height: calc(2.25rem + 2px);
+    width: 2rem;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    pointer-events: none;
+}
+
+.form-control2 {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #7e7e7e;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0.4rem;
+}
+
+.tipo-reporte {
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    * {
+        padding-right: 1rem;
+        align-items: center;
+        vertical-align: middle;
+    }
+    h5 {
+        color: $primary;
+
+    }
+    label {
+        font-size: 0.85rem;
+        display: inline-block;
+        margin-top: 1.5rem;
+    }
+}
+
+.table {
+    font-size: 0.85rem;
+}
+
+// form check //
+.form-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: $white;
+    color: $primary;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+    border: 2px solid $gray-800;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 4px;
+    outline: none;
+}
+
+.form-radio:checked::before {
+    position: absolute;
+    font: 45px/1 'Open Sans', sans-serif;
+    left: -1px;
+    top: -14px;
+    content: "•";
+    transform: rotate(40deg);
+    color: $primary;
+}
+
+.form-radio:hover {
+    background-color: $primary;
+    color: $primary;
+    content: '\02143';
+}
+
+.form-radio:checked {
+    background-color: $white;
+    border: 2px solid $gray-800;
+}
+
+label {
+    font: 300 16px/1.7 'Open Sans', sans-serif;
+    color: #666;
+    cursor: pointer;
+}
+
+
+// Example: Style from medium breakpoint and down
+@include media-breakpoint-down(md) {
+    .logo {
+      height: 2rem;
+    }
+
+    .panel-g {
+    text-align: center;
+    }
+
+    .panel-2 {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .tipo-reporte {
+        display: block;
+        text-align: center;
+
+        label {
+            margin-top: 1rem;
+        }
+
+        * {
+            padding-right: 0
+        }
+    }
+  }
