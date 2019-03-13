@@ -57,8 +57,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     margin-left: auto;
     a {
         font-size: 0.8rem;
@@ -91,8 +91,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     margin-left: auto;
     p {
         font-size: 1rem;
@@ -164,7 +164,7 @@ button {
 .login-b {
     text-align: center;
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
     padding: 0 10%;
 }
 
@@ -297,7 +297,7 @@ button {
     top: -14px;
     content: "•";
     -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
+    transform: rotate(40deg);
     color: $primary;
 }
 
@@ -321,15 +321,15 @@ label {
 .card-85 {
     height: 85% !important;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 // Example: Style from medium breakpoint and down
@@ -341,15 +341,15 @@ label {
         text-align: center;
     }
     .panel-1 {
-        margin-top: 1rem;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
     .panel-2 {
+        margin-top: 1rem;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
     .tipo-reporte {
         display: block;
